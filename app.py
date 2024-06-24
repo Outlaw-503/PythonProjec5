@@ -9,4 +9,4 @@ with s:
   data.dropna(subset=["rating","processor_brand","num_cores","processor_speed","battery_capacity","num_front_cameras","os","primary_camera_front"],axis=0,inplace=True)
   data.drop(columns=["fast_charging","extended_upto"],inplace=True)
   st.bar_chart(data=data,x="brand_name",y="price")
-  
+  st.bar_chart(data=data,x="brand_name",y="rating")
