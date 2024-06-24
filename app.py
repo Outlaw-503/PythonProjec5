@@ -13,4 +13,5 @@ with s:
   st.write("A Chart showing total sales according to processor brands \n")
   st.bar_chart(data=data,x="processor_brand",y="price")
   st.write("A Chart showing refresh rates of smartphones in terms of their operating system \n")
-  st.bar_chart(data=data,x="os",y=data["refresh_rate"].unique())
+  for(i in data["refresh_rate"].unique()):
+    st.bar_chart(data=data,x="os",y=i)
