@@ -13,4 +13,4 @@ with s:
   st.write("A Chart showing how pricing changes according to processor brands \n")
   st.bar_chart(data=data,x="processor_brand",y="price")
   st.write("A Chart showing how pricing changes if extended memory is available or not \n")
-  st.bar_chart(data=data,x="extended_memory_available",y="price")
+  st.scatter_chart(data=data,x="extended_memory_available",y="price")
