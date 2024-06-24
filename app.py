@@ -12,5 +12,4 @@ with s:
   st.bar_chart(data=data,x="brand_name",y="price")
   st.write("A Chart showing total sales according to processor brands \n")
   st.bar_chart(data=data,x="processor_brand",y="price")
-  a=sns.pairplot(data)
-  st.write(a)
+  
