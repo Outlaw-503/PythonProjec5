@@ -10,3 +10,5 @@ with s:
   data.drop(columns=["fast_charging","extended_upto"],inplace=True)
   st.bar_chart(data=data,x="brand_name",y="price")
   st.bar_chart(data=data,x="brand_name",y="rating")
+  st.bar_chart(data=data,x="processor_brand",y="rating")
+  st.bar_chart(data=data,x="processor_brand",y="price")
